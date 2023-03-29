@@ -10,28 +10,47 @@
             vertical
         ></v-divider>
     
-        <v-toolbar-title>Adam</v-toolbar-title>
+        <v-btn @click="goHome"><v-icon>mdi-home</v-icon></v-btn>
+
+        <h1>Adam Lederer</h1>
     
         <v-spacer></v-spacer>
     
         <v-spacer></v-spacer>
 
-        <v-btn variant="text">Projects</v-btn>
-        <v-btn variant="text">Contact</v-btn>
+        <v-btn @click="projects" variant="text">Projects</v-btn>
+        <v-btn @click="contact" variant="text">Contact</v-btn>
 
         <v-divider vertical></v-divider>
     </v-toolbar>
 </template>
 
 <script>
+import router from '@/router'
 
 export default {
     name: 'AppBar',
-};
+    methods: {
+        goHome(){
+            router.push('/')
+        },
+        projects() {
+            router.push('/projects')
+        },
+        contact() {
+            router.push('/contact')
+        }
+    },
+}
 </script>
 
 <style scoped>
 .appBar{
     height: 10px;
+}
+h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 </style>

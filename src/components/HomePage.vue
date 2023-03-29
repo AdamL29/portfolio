@@ -3,7 +3,7 @@
     <v-row class="text-center">
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Welcome to My Portfolio!
+          Welcome to My Basic Portfolio!
         </h1>
 
         <p class="subheading font-weight-regular">
@@ -42,19 +42,15 @@
         cols="12"
       >
         <h2 class="headline font-weight-bold mb-3">
-          Github Repositories
+          Skills & Technologies
         </h2>
 
         <v-row justify="center">
-          <a
-            v-for="(eco, i) in ecosystem"
-            :key="i"
-            :href="eco.href"
-            class="subheading mx-3"
-            target="_blank"
-          >
-            {{ eco.text }}
-          </a>
+          <p>Skilled in API Testing with Postman.
+            Database building in DBeaver.
+            Usage of Git & GitHub for repositories and collaboration.
+            Deploying web domains through GCP.
+          </p>
         </v-row>
       </v-col>
     </v-row>
@@ -66,16 +62,10 @@
     name: 'HomePage',
 
     data: () => ({
-      ecosystem: [
+      reference: [
         {
           text: 'github',
           href: 'https://github.com/AdamL29',
-        },
-      ],
-      whatsNext: [
-        {
-          text: 'Explore components',
-          href: 'https://vuetifyjs.com/components/api-explorer',
         },
       ],
     }),
