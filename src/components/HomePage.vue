@@ -75,7 +75,11 @@
 <style scoped>
 .body{
     height: 90vh;
-    right: 20%;
-    /* transform: translateX(-50%); */
+}
+.text-center{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 </style>
