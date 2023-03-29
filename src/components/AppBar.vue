@@ -19,7 +19,7 @@
         <v-spacer></v-spacer>
 
         <v-btn @click="projects" variant="text">Projects</v-btn>
-        <v-btn @click="contact" variant="text">Contact</v-btn>
+        <!-- <v-btn @click="contact" variant="text">Contact</v-btn> -->
 
         <v-divider vertical></v-divider>
     </v-toolbar>
@@ -37,9 +37,9 @@ export default {
         projects() {
             router.push('/projects')
         },
-        contact() {
-            router.push('/contact')
-        }
+        // contact() {
+        //     router.push('/contact')
+        // }
     },
 }
 </script>

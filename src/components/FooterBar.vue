@@ -2,6 +2,8 @@
     <v-container>
         <footer>
             <h4>COPYRIGHT © 2023 by Adam</h4>
+            <h4>Contact Me: Adamlederer@live.ca</h4>
+
         </footer>
     </v-container>
 </template>

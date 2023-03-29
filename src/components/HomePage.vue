@@ -75,5 +75,7 @@
 <style scoped>
 .body{
     height: 90vh;
+    right: 20%;
+    /* transform: translateX(-50%); */
 }
 </style>
